@@ -25,6 +25,10 @@ body {
 	background-image: linear-gradient(to right, #8de0ed, #adf7e5);
 }
 
+.dn {
+	display: none !important;
+}
+
 /*메인-첫화면*/
 #main {
 	position: fixed;
@@ -39,6 +43,8 @@ body {
 	border-radius: 12px;
 	overflow: hidden;
 }
+
+/*로그인*/
 #login {
 	width: 100%;
 	height: 100%;
@@ -52,6 +58,7 @@ body {
 #login > p {
 	margin-bottom: 7px;
 	letter-spacing: 2px;
+	color: #777;
 }
 #login > input {
 	width: 100%;
@@ -62,7 +69,7 @@ body {
 	border-radius: 7px;
 	outline: none;
 	padding: 0 20px;
-	font-size: 21px;
+	font-size: 18px;
 }
 #login > #login-btn {
 	width: 100%;
@@ -79,13 +86,24 @@ body {
 	float: right;
 	color: #4285f4;
 	margin-bottom: 21px;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 15px;
 }
 #login > a > span {
 	margin-left: 5px;
 }
 
+/*회원가입*/
+.register-on {
+	right: -10% !important;
+	cursor: default !important;
+}
+.register-click-on {
+	opacity: 0 !important;
+}
+.register-close-on {
+	right: 60px !important;
+}
 #register {
 	background-color: #4285f4;
 	width: 100%;
@@ -93,14 +111,20 @@ body {
 	position: absolute;
 	right: -95%;
 	top: 0;	
-	padding: 30px 10px;
+	padding: 30px 50px;
+	padding-right: 150px;
 	cursor: pointer;
+	transition: .6s;
 }
 #register > #register-click {
+	position: absolute;
+	top: 30px;
+	left: 15px;
 	cursor: pointer;
 	color: #fff;
 	opacity: 0.5;
 	font-size: 21px;
+	transition: .6s;
 }
 #register:hover > #register-click {
 	transition: .6s;
@@ -110,16 +134,68 @@ body {
 	transition: .6s;
 	right: -90%;
 }
-
-.right {
-	right: 40px;
-}
 #register-close {
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	right: -100%;
 	color: #fff;
-	font-size: 54px;
+	font-size: 32px;
 	cursor: pointer;
 	transition: .6s;
+}
+#register > h3 {
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 21px;
+	letter-spacing: 1px;
+}
+#register > p {
+	color: #fff;
+	margin-bottom: 7px;
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+#register > input {
+	width: 100%;
+	height: 40px;
+	background-color: #3b77db;
+	border: none;
+	border-radius: 7px;
+	padding: 0 20px;
+	outline: none;
+	margin-bottom: 12px;
+	color: #fff;
+}
+#register > button {
+	width: 100%;
+	height: 45px;
+	background-color: #fff;
+	color: #4285f4;
+	margin-top: 12px;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*
+
+***** 게임 화면 설정 *********
+
+*/
+
+.game-start { 
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+#myGame {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
 }

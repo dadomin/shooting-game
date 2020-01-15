@@ -45,10 +45,10 @@ class DB {
 		echo "</script>";
 	}
 
-	public static function msgAndBackD($msg)
+	public static function msgAndBack($msg)
 	{
 		echo "<script>";
-		echo "alert('$msg');"
+		echo "alert('$msg');";
 		echo "history.back();";
 		echo "</script>";
 	}

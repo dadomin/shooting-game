@@ -10,5 +10,4 @@ require(__ROOT . "/autoload.php");
 require(__ROOT . "/web.php");
 
 $url = isset($_GET['url']) ? "/" . $_GET['url'] : "/";
-
 Route::route($url);
