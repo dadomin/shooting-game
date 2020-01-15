@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	min-height: 970px;
+	overflow: hidden;
+	background-image: linear-gradient(to right, #8de0ed, #adf7e5);
+}
+
+/*메인-첫화면*/
+#main {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: 800px;
+	height: 500px;
+	padding: 50px;
+	padding-right: 100px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+#login {
+	width: 100%;
+	height: 100%;
+}
+#login > h3 {
+	color: #4285f4;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 42px;
+}
+#login > p {
+	margin-bottom: 7px;
+	letter-spacing: 2px;
+}
+#login > input {
+	width: 100%;
+	height: 50px;
+	border: none;
+	background-color: #e5e4e4;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	outline: none;
+	padding: 0 20px;
+	font-size: 21px;
+}
+#login > #login-btn {
+	width: 100%;
+	height: 50px;
+	background-color: #4285f4;
+	border: none;
+	border-radius: 7px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#login > a {
+	float: right;
+	color: #4285f4;
+	margin-bottom: 21px;
+	font-weight: 600;
+	font-size: 15px;
+}
+#login > a > span {
+	margin-left: 5px;
+}
+
+#register {
+	background-color: #4285f4;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: -95%;
+	top: 0;	
+	padding: 30px 10px;
+	cursor: pointer;
+}
+#register > #register-click {
+	cursor: pointer;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 21px;
+}
+#register:hover > #register-click {
+	transition: .6s;
+	opacity: 0;
+}
+#register:hover {
+	transition: .6s;
+	right: -90%;
+}
+
+.right {
+	right: 40px;
+}
+#register-close {
+	position: absolute;
+	top: 30px;
+	right: -100%;
+	color: #fff;
+	font-size: 54px;
+	cursor: pointer;
+	transition: .6s;
+}
